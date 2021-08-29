@@ -21,7 +21,7 @@
   "homepage": "https://github.com/chashamsarao/sit725-2021-t2-prac3#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongodb": "^4.1.0",
+    "mongodb": "^4.1.1",
     "socket.io": "^4.1.3"
   }
 }

@@ -1,15 +1,16 @@
 let express = require("express");
 let app = express();
-const MongoClient = require('mongodb').MongoClient;
+//const MongoClient = require('mongodb').MongoClient;
 let projectCollection;
 
-const uri = 'mongodb+srv://sit725-prac4:chasham123@sit725-2021-t2-prac4.czepu.mongodb.net/sit725-prac4?retryWrites=true&w=majority';
-const client = new MongoClient(uri, {useNewUrlParser : true});
+/*const uri = 'mongodb+srv://sit725-prac4:chasham123@sit725-2021-t2-prac4.czepu.mongodb.net/sit725-prac4?retryWrites=true&w=majority';
+const client = new MongoClient(uri, {useNewUrlParser : true}); */
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 
+/*
 const createCollection = (collectionName) => {
   client.connect((err,db) => {
     projectCollection = client.db().collection(collectionName);
@@ -22,7 +23,7 @@ const createCollection = (collectionName) => {
   }
 } )
 }
-
+*/
 var port = process.env.PORT || 3000;
 
 app.listen(port,()=>{
